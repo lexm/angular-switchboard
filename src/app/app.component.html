@@ -1,0 +1,10 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}
+  </h1>
+    <div class="bigbox" *ngFor="let switch of switches; let idx = index">
+      <div (click)="clickSwitch(idx)" *ngIf="switch" class="red">ON</div>
+      <div (click)="clickSwitch(idx)" *ngIf="!switch" class="green">OFF</div>
+    </div>
+</div>
